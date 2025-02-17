@@ -17,7 +17,8 @@ const TemperatureInput = ({ value, onChangeText }: Props) => {
         onChangeText={onChangeText}
         keyboardType="numeric"
         placeholder="0"
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={Colors.textPrimary}
+        testID="temperature-input"
       />
     </View>
   )

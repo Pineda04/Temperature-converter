@@ -37,16 +37,19 @@ const TemperatureConverter = () => {
           label="°C"
           selected={fromUnit === 'C'}
           onPress={() => setFromUnit('C')}
+          testID="unit-selector-°C" 
         />
         <UnitSelector
           label="°F"
           selected={fromUnit === 'F'}
           onPress={() => setFromUnit('F')}
+          testID="unit-selector-°F"
         />
         <UnitSelector
           label="K"
           selected={fromUnit === 'K'}
           onPress={() => setFromUnit('K')}
+          testID="unit-selector-K"
         />
       </View>
 
@@ -57,16 +60,19 @@ const TemperatureConverter = () => {
           label="°C"
           selected={toUnit === 'C'}
           onPress={() => setToUnit('C')}
+          testID="unit-selector-C"
         />
         <UnitSelector
           label="°F"
           selected={toUnit === 'F'}
           onPress={() => setToUnit('F')}
+          testID="unit-selector-F"
         />
         <UnitSelector
           label="K"
           selected={toUnit === 'K'}
           onPress={() => setToUnit('K')}
+          testID="unit-selector-K"
         />
       </View>
     </View>
